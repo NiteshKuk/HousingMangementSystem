@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colourRegisterButton">#4E342E</color>
+    <color name="Black">#FF0E0E0E</color>
+    <color name="white">#fffdfd</color>
+    <color name="orange">#FF3400</color>
+    <color name="blue">#06a9f1</color>
+    <color name="bblack">#303030</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="toolbarcolor">#fdb9b7b7</color>
+    <color name="profiletoolbarcolor">#fd6bead5</color>
+    <color name="colorClick">#abcdef</color>
+    <color name="grey">#d3d3d3</color>
+
+
+</resources>
