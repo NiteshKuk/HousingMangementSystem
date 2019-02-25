@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Callendar">
+
+
+
+    <com.stacktips.view.CustomCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:calendarBackgroundColor="@color/white"
+        app:calendarTitleTextColor="@color/black"
+        app:currentDayOfMonthColor="@color/colorAccent"
+        app:dayOfMonthTextColor="@color/black"
+        app:dayOfWeekTextColor="@color/black"
+        app:disabledDayBackgroundColor="@color/voilet_colorAccent"
+        app:disabledDayTextColor="@color/grey_colorPrimary"
+        app:selectedDayBackgroundColor="@color/blue"
+        app:titleLayoutBackgroundColor="@color/white"
+        app:weekLayoutBackgroundColor="@color/white">
+    </com.stacktips.view.CustomCalendarView>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_style"
+    tools:context=".UploadFilesActivity">
+
+    <TextView
+        android:id="@+id/textviewupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Upload Files"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/fileuploadbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewupload"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/file_upload"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Select File To Upload"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/upload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bottom_layout_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/filetypeuploading"
+            android:text="Your File Is Uploading"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_extralight"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/filetype"
+            android:text="FileType.type"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/nunito_extralight"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"/>
+
+        <ProgressBar
+            android:id="@+id/upload_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingBottom="2dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_custom" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/counter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="240dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/pausebtn"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pause_upload_background"
+            android:fontFamily="@font/nunito_extralight"
+            android:padding="15dp"
+            android:text="Pause Upload"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancelbtn"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cancel_upload_background"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Cancel Upload"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

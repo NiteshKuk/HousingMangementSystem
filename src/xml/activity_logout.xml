@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".LogoutActivity">
+
+    <TextView
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:text="Thanks For Using Housing Mangement System See You Soon" />
+
+    <Button
+        android:id="@+id/buttonlogout"
+        style="@style/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/normal"
+        android:text="Logout"
+        android:layout_centerInParent="true"
+        android:textSize="15dp" />
+
+</RelativeLayout>

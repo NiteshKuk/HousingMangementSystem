@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profiletoolbar"
+        android:background="@color/profiletoolbarcolor">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/RegisterButton"
+            android:background="@drawable/ic_back"
+            android:id="@+id/back"
+            android:backgroundTint="@color/Black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profiletextview"
+            android:fontFamily="@font/nunito_extralight"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:transitionName="nametransition"
+            android:textColor="@color/Black"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="imagetransition"
+        android:layout_below="@id/profiletoolbar"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_person_outline_black_24dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/userprofle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userstatus"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="1515151510"
+        android:textStyle="bold"
+        android:transitionName="statustransition"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/userprofle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userprofileemail"
+        android:transitionName="emailtransition"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="1515151510"
+        android:layout_below="@id/userstatus"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercontact"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="1515151510"
+        android:layout_below="@id/userprofileemail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>

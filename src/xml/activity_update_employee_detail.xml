@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEmployeeDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/updatetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Id:           "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/updatetextid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/updatetext"
+            android:text="Unique Id"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/updatename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updatetext"
+            android:layout_marginTop="10dp"
+            android:text="Name:    "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/updatetextname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updatetextid"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/updatename"
+            android:text="Member Name"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/updatebuilding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Building:  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/updatename"/>
+
+        <TextView
+            android:id="@+id/updatebuildingid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/updatebuilding"
+            android:layout_below="@id/updatetextname"
+            android:text="Building Id"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/updatecontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact:  "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/updatebuilding"/>
+
+        <TextView
+            android:id="@+id/updatecontactid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/updatecontact"
+            android:layout_below="@id/updatebuildingid"
+            android:text="Contact Id"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/employeebutton"
+            android:layout_width="32dp"
+            android:layout_height="21dp"
+            android:layout_below="@id/updatecontactid"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/updateimage"
+            android:background="@drawable/ic_add" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updateimage"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_below="@id/updatecontactid"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_person_outline_black_24dp" />
+
+        <FrameLayout
+            android:id="@+id/framelay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/updateimage"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="bottom|end"
+                android:orientation="vertical">
+
+
+
+                <!--<android.support.v7.widget.AppCompatButton
+                    android:id="@+id/update"
+                    style="@style/RegisterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="70dp"
+                    android:text="Delete User"
+                    android:textSize="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"/>-->
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>

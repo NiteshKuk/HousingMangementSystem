@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notice_Reply_Activity">
+
+
+    <TextView
+        android:id="@+id/rplytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rplytexttime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rplytexttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Time"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rplytextroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rplytext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="Room"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rplytextroommessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rplytextroom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:gravity="center"
+        android:text="Message"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textrply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="250"
+        app:errorEnabled="true"
+        android:layout_below="@id/rplytextroommessage"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reply"
+            android:inputType="text"
+            android:maxLength="250" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonregisterrply"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_below="@id/textrply"
+        style="@style/RegisterButton"/>
+
+   <!-- <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recylerviewrply"
+        android:layout_below="@id/buttonregisterrply">
+
+    </android.support.v7.widget.RecyclerView>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        android:id="@+id/viewcards"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttonregisterrply"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replied Message With Time"
+        android:layout_below="@+id/viewcards"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_extralight"
+        android:textStyle="bold"
+        android:id="@+id/normaltextreply"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Black"
+        android:id="@+id/viewcards1"
+        android:layout_below="@id/normaltextreply"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rplymessagetime"
+        android:text="Message Reply Time"
+        android:layout_below="@id/viewcards1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rplymessage"
+        android:text="Message Reply"
+        android:layout_below="@id/rplymessagetime"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</RelativeLayout>
