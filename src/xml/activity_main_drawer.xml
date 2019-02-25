@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/registermember"
+            android:icon="@drawable/ic_team"
+            android:title="Register Member"></item>
+        <item
+            android:id="@+id/memberdetails"
+            android:icon="@drawable/ic_member_details"
+            android:title="MemberDetails" />
+        <item
+            android:id="@+id/nav_employers"
+            android:icon="@drawable/ic_network"
+            android:title="Employers" />
+        <item
+            android:id="@+id/nav_update_employers"
+            android:icon="@drawable/ic_network"
+            android:title="Update Employees" />
+        <item
+            android:id="@+id/nav_Bills"
+            android:icon="@drawable/ic_invoice"
+            android:title="Bills" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Files">
+            <menu>
+                <item
+                    android:id="@+id/nav_upload"
+                    android:icon="@drawable/ic_file_upload_black_24dp"
+                    android:title="Upload Files"/>
+                <item
+                android:id="@+id/nav_retrieve_Upload"
+                android:icon="@drawable/ic_arrow_downward_black_24dp"
+                android:title="Retrieve Upload Files"/>
+
+            </menu>
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Notice">
+            <menu>
+                <item
+                    android:id="@+id/nav_board"
+                    android:icon="@drawable/ic_male_cartoon_pointing_to_white_board"
+                    android:title="Notice Board" />
+                <item
+                    android:id="@+id/nav_notice_get"
+                    android:icon="@drawable/ic_male_cartoon_pointing_to_white_board"
+                    android:title="See Notice Board"/>
+
+            </menu>
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Payment Gateway">
+            <menu>
+                <item
+                    android:id="@+id/nav_payment"
+                    android:icon="@drawable/ic_rupee_indian"
+                    android:title="Online Payment"/>
+
+            </menu>
+
+        </item>
+    </group>
+
+    <item android:title="My Account">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_manuser"
+                android:title="Profile" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"></item>
+        </menu>
+    </item>
+
+</menu>
